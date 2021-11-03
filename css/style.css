@@ -1,0 +1,564 @@
+body {
+	font-size: 12pt;
+	font-family: verdana, serif;
+	color: black;
+	background-color: white;	
+}
+
+img {
+	border: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+
+/*  Gestion de l'entete  */
+
+#entete {
+	text-align: center;
+	color: white;
+	background-color: rgba(24, 58, 101, 1);
+	margin: 0px;
+	padding: 3px;
+}
+
+#entete>div {
+	display: inline-block;
+	vertical-align: middle;
+	width: 48%;
+	min-width: 250px;
+	padding: 6px 6px;
+}
+
+#logo {
+	text-align: left;
+	font-family: forte, verdana, serif;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+#menu {
+	text-align: right;
+}
+
+#menu a {
+	color: white;
+	font-size: 16pt;
+	font-family: forte, verdana, serif;
+	font-weight: bold;
+	margin: 0px 5px; 
+	padding: 10px;
+}
+
+
+#menu a:hover {
+	border-bottom: 2px solid white;
+	transition: all 5s;
+}
+
+/*  Fin Gestion de l'entete  */
+
+
+
+/* Gestion du Slide */
+
+#slides .slide {
+	position: center;
+	width: 100%;
+	height: 590px;
+}
+
+#slides .slide .titre {
+	position: absolute;
+	top: 324px;
+	left: 48px;
+	color: white;
+	font-family: forte, verdana, serif;
+	font-weight: bold;
+	font-size: 25pt;
+}
+
+
+#slides .slide .description {
+	position: absolute;
+	top: 400px;
+	left: 40px;
+	color: white;
+	font-size: 14pt;
+}
+
+#slides .slide .bouton {
+	position: absolute;
+	top: 450px;
+	left: 40px;
+}
+
+#slides .slide .bouton a {
+	color: white;
+	padding: 7px 7px;
+	background-color: rgba(24, 58, 101, 1);
+	border-radius: 4px.
+	
+}
+
+#slides .slide .bouton a:hover {
+	background-color: white;
+	color: black;
+	transition: all 0.5s;
+}
+
+/* Fin Gestion du Slide */
+
+
+
+
+/* Gestion des services */
+
+#services {
+	position:relative;
+	width: 100%;
+	padding: 20px 0px;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+
+#services .titre {
+	text-align: center;
+	font-family: forte, verdana, serif;
+	font-size: 30pt;
+	font-weight: bold;
+	margin: 24Px 0px;
+}
+
+
+#services .service {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	min-width: 250px;
+	padding: 10px 10px;
+	margin: 20px 10px;
+	border: 1px solid rgba(24, 58, 101, 1);
+	text-align: center;
+	cursor: pointer;
+}
+
+#services .service>div {
+	margin: 5px 0px;
+}
+
+#services .service .icon {
+	font-size: 45pt;
+}
+
+#services .service .readmore {
+	margin-top: 40px;
+}
+
+#services .service .readmore a {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 10pt;
+	color: white;
+	background-color: rgba(24, 58, 101, 1);
+	padding: 10px;
+	border-radius: 4px;
+}
+
+
+#services .service:hover {
+	color: white;
+	background-color: rgba(24, 58, 101, 1);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+	transform: scale(1.05);
+	transition: all 0.5s; 
+}
+
+#services .service:hover .icon {
+	transform: rotate(360deg);
+	transition: all 0.5s;
+}
+
+#services .service:hover .readmore a {
+	color: black;
+	background-color: white;
+	transition: all 0.5s;
+}
+
+/* Fin Gestion des services */
+
+
+
+
+
+/* Gestion qui sommes nous */
+
+#aboutus {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 40px 0px;
+	padding: 40px 0px;
+	background-color: rgba(24, 58, 101, 1);
+}
+
+#aboutus>div{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 10px;
+	min-width: 250px;
+}
+
+#aboutus .photo {
+	width: 30%;
+}
+
+#aboutus .photo img {
+	width: 250px;
+}
+
+#aboutus .textes {
+	width: 64%;
+}
+
+
+#aboutus .textes .titre {
+	font-weight: bold;
+	font-family: forte, verdana, serif;
+	font-size: 20pt;
+	color: white;
+}
+
+#aboutus .textes .contenu {
+	text-align: justify;
+	font-size: 13pt;
+	margin: 20px 0px;
+	color: white;
+}
+
+#aboutus .textes .bouton {
+	text-align: right;
+}
+
+#aboutus .textes .bouton a {
+	color: black;
+	background-color: white;
+	padding: 10px 10px;
+	font-weight: bold;
+}
+
+#aboutus:hover .textes .bouton {
+	animation: jackInTheBox 1.5s;
+}
+
+#aboutus:hover .photo {
+	animation: slideInLeft 0.5s;
+}
+
+/* Fin Gestion qui sommes nous */
+
+
+/*gestion de contact*/
+
+
+
+
+#mu-contact {
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+  margin: 40px auto;
+}
+#mu-contact .mu-contact-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-contact .mu-contact-area .mu-contact-content {
+  display: inline;
+  float: left;
+  margin-top: 50px;
+  width: 100%;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .reply-title {
+  font-size: 25px;
+  margin-top: 0;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform label {
+  display: block;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform label .required {
+  color: #f60;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform input[type="text"],
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform input[type="email"],
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform input[type="url"] {
+  border: none;
+  border: 1px solid rgba(24, 58, 101, 1);
+  color: #555;
+  margin-bottom: 10px;
+  height: 35px;
+  padding: 5px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform textarea {
+  border: none;
+  border: 1px solid rgba(24, 58, 101, 1);
+  color: #555;
+  margin-bottom: 5px;
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input {
+  margin-top: 10px;
+  color:black;
+}
+
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input:hover {
+	background-color: rgba(24, 58, 101, 1);
+	color: white;
+	transition: all 0.5s;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-right iframe {
+  height: 500px;
+}
+
+
+/*fin gestion de contact*/
+
+
+
+/* Gestion des realisations */
+
+#realisations {
+	width: 100%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+#realisations .titre {
+	text-align: center;
+	font-family: forte, verdana, serif;
+	font-size: 40pt;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
+
+#realisations .categories {
+	margin: 30px 0px;
+	text-align: center;
+}
+
+#realisations .categories .categorie {
+	margin: 0px 0px;
+	padding: 10px 10px;
+	color: white;
+	background-color: rgba(24, 58, 101, 1);
+	font-size: 11pt;
+	font-weight: bold;
+	cursor: pointer;
+	border-right: 2px solid white;
+}
+
+
+#realisations .categories .categorie:hover {
+	color: black;
+	background-color: white;
+	border-bottom: 2px solid rgba(24, 58, 101, 1);
+	transition: all 0.5s;
+}
+
+
+#realisations .elements .realisation {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	min-width: 250px;
+	margin: 10px 10px;
+	cursor: pointer;
+	border-bottom: 2px solid rgba(24, 58, 101, 1);
+}
+
+
+#realisations .elements .realisation .photo {
+	width: 100%;
+	height: 200px;
+}
+
+
+#realisations .elements .realisation .textes {
+	text-align: center;
+	font-style: italic;
+	margin: 10px 0px;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+
+#realisations .elements .realisation:hover {
+	color: white;
+	background-color: rgba(24, 58, 101, 1);
+	transition: all 0.5s;
+}
+
+#realisations .elements .realisation:hover .photo {
+	animation: bounce 1.5s; 
+}
+
+
+/* Fin Gestion des realisations */
+
+
+
+
+/* gestion de nos partenaires */
+
+#partenaires {
+	width: 100%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+#partenaires .titre {
+	text-align: center;
+	font-family: forte, verdana, serif;
+	font-size: 35pt;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
+#partenaires .partenaire {
+	display: inline-block;
+	vertical-align: top;	/* allignement en haut */
+	width: 20%;
+	min-width: 250px;
+	height: 150px;
+	margin: 10px 10px;
+}
+
+
+#partenaires .partenaire:hover {
+	animation: bounce 1s;
+}
+
+
+/*Fin de gestion des partenaires*/
+
+
+
+
+/*Gestion du footer */
+
+
+footer {
+	width: 100%;
+	margin: 50px auto 0px auto;
+	text-align: center;
+	color: white;
+	background-color: rgba(24,58,101,1);
+	padding: 10px 0px;
+}
+
+#footer1>div{
+   display: inline-block;
+   vertical-align: top;
+   width: 30%;
+   min-width: 200px;
+   padding: 0px 10px;
+   text-align: justify;
+   font-size: 11pt;
+   margin: 30px 0px;
+
+}
+
+#footer1 .titre {
+	text-align: center;
+	font-family: forte,verdana,serif;
+	font-size: 20pt;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
+
+#footer1 .info.texte {
+	margin-bottom: 10px;
+
+}
+#footer .info.bouton{
+	text-align:right;
+}
+
+
+#footer1.info.bouton a {
+	font-size: 10px;
+	font-weight: bold;
+	padding: 5px 5px;
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+
+
+}
+
+
+#footer1 .newletter {
+    text-align: right;
+}  
+
+#footer1 .newletter .formulaire type=["text"]
+#footer1 .newletter .formulaire type=["email"]
+  
+
+
+#footer1 .newletter .formulaire type=["submit"]{
+	padding: 7px 5px;
+	font-size: 9px;
+	font-weight: bold;
+	color: black;
+	 background-color: white;
+	 border: 0;
+	 margin-top: 2px;
+	}  
+
+#footer1 .newletter .formulaire legend {
+	color:white;
+}
+  
+
+  #footeer2 {
+  	   text-align: center;
+  	   
+  }
